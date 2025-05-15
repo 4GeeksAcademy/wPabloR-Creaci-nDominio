@@ -21,6 +21,10 @@ window.onload = function() {
   }
     return doms
 }
-
   console.log(createDOM(pronoun, adj, noun));
+
+
+let imprimir = createDOM(pronoun, adj, noun)
+
+document.querySelector("#imprimir").innerHTML = imprimir.map(item => `<p class="mb-2">${item}</p>`).join("");
 };
